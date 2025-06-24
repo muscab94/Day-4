@@ -1151,6 +1151,9 @@ button:hover {
     .natu p{
         width: 300px;
     }
+    #bty{
+        margin-left: 90px;
+    }
     .footer{
         flex-direction: column;
         height: 200vh;
