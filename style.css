@@ -100,6 +100,8 @@ a {
 .section {
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    
 }
 
 .left {
@@ -160,20 +162,21 @@ a {
     height: 300px;
     border-radius: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
-    animation: anim 3s;
+    animation: anim 4s ;
       /* animation-timeline: scroll(0%); */
     /* animation-range: 190%; */
+    
 }
 
 @keyframes anim {
-    0% {
-        opacity: 0;
-        transform: translatex(200px);
+    from{
+        
+        transform: translatex(400px);
     }
 
-    100% {
-        opacity: 1;
-        transform: translatex();
+    to {
+      
+        transform: translatex(0px);
     }
 }
 
@@ -204,6 +207,7 @@ button:hover {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 130px;
+ 
 
 }
 
@@ -218,14 +222,14 @@ button:hover {
     height: 190px;
     border-radius: 20px;
     box-shadow: 2px 3px 10px rgba(0, 0, 0,1);
-    animation: aniim 5s;
-    animation-timeline: scroll;
+    animation: aniim 5s ease-in-out;
+    animation-timeline: view(80% auto);
 }
 
 @keyframes aniim {
     0% {
         /* opacity: 0; */
-        transform: translateY(100px);
+        transform: translatex(-300px);
     }
 
     100% {
@@ -236,6 +240,7 @@ button:hover {
 
 .k img:hover {
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .right2 {
@@ -282,6 +287,7 @@ button:hover {
     height: 260vh;
     background-color: rgb(217, 240, 230);
     position: relative;
+    overflow: hidden;
 }
 
 .nav {
@@ -294,14 +300,27 @@ button:hover {
     width: 680px;
     height: 500px;
     margin-left: 100px;
+      
+    
 }
-
+@keyframes guul{
+    0%{
+     
+        transform: translatex(-500px);
+    }
+    100%{
+       
+        transform: translatex(0px);
+    }
+}
 .one #r {
     width: 290px;
     height: 300px;
     margin-bottom: 20px;
     border-radius: 10px;
     position: relative;
+    animation: guul 4s ease-in-out;
+    
 }
 
 .one #t {
@@ -311,6 +330,8 @@ button:hover {
     position: absolute;
     top: 190px;
     left: 330px;
+    animation: guul 4s ease-in-out;
+   
 }
 
 .two i {
@@ -416,20 +437,24 @@ button:hover {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .ass {
     margin-bottom: 20px;
 }
-
-.ass img {
+/* .ass{
+     animation-timeline: view(80% auto);
+} */
+.ass  img {
     width: 350px;
     margin-left: 65px;
     margin-right: 10px;
     /* box-shadow: 1px 2px 40px; */
     border-radius: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
-
+     animation: dis 3s ease-in-out;
+    animation-timeline: view(80% auto);
 }
 
 .ass h2 {
@@ -456,9 +481,10 @@ button:hover {
 
 .fg {
     display: flex;
+    overflow: hidden;
     /* justify-content: space-between; */
     margin-top: 70px;
-    animation: dis 2s;
+   
     /* animation-range: -100%; */
     /* box-shadow: 1px 2px 10px; */
     /* animation-timeline: view(); */
@@ -467,9 +493,11 @@ button:hover {
 .dj {
     display: flex;
     margin-top: 20px;
+    overflow: hidden;
     /* justify-content: space-between; */
     margin-top: 100px;
-    animation: diss 2s;
+    animation: diss 2s ease-in-out;
+    animation-timeline: view(90% auto);
     /* animation-timeline: view();
     animation-range: -10%; */
 }
@@ -480,14 +508,20 @@ button:hover {
 
 @keyframes dis {
     0% {
-        transform: translatey(300px);
+        transform: translatey(400px);
+    }
+    100%{
+        transform: translatey(0px);
     }
 }
 
 /*  */
 @keyframes diss {
     0% {
-        transform: translatex(-300px);
+        transform: translatex(-400px);
+    }
+    100%{
+        transform: translatex(0px);
     }
 }
 
@@ -509,6 +543,7 @@ button:hover {
     margin-bottom: 20px;
     background-color: antiquewhite;
     position: relative;
+    overflow: hidden;
 }
 
 .qaz {
@@ -582,6 +617,7 @@ button:hover {
     gap: 30px;
     margin-top: 30px;
     animation: top 5s;
+    
     overflow: hidden;
 }
 
@@ -696,16 +732,21 @@ button:hover {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 10px;
+
 }
 
 .section7 {
     display: flex;
     margin-top: 40px;
+     animation-timeline: view(80% auto);
+    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .natu img {
     width: 400px;
     height: 300px;
+    
 }
 
 .natu {
@@ -716,7 +757,10 @@ button:hover {
     margin-bottom: 20px;
     box-shadow: 2px 3px 15px rgb(19, 20, 20);
     margin-top: 10px;
-    animation: ww 5s;
+    
+    animation: ww 5s ease-in-out;
+     /* animation-timeline: view(80% auto); */
+     
 }
 
 .natu:hover {
@@ -726,11 +770,11 @@ button:hover {
 
 @keyframes ww {
     0% {
-        transform: translatey(-300px) scale(0.8);
+        transform: translatex(300px) ;
     }
 
     100% {
-        transform: translatey(0);
+        transform: translatey(0px);
     }
 }
 
@@ -1164,5 +1208,854 @@ button:hover {
         /* width: 50%; */
         margin-left: -20px;
         font-size: 15px;
+    }
+}
+
+
+/* 
+@media(min-width: 1180px) {
+    .header ul {
+        display: none;
+
+    }
+    .som h1{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #icon2{
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .icon i {
+        display: none;
+    }
+
+    .bnm i {
+        display: block;
+        padding-top: 30px;
+        font-size: 40px;
+        padding-left: 390px;
+    }
+    #list{
+        background-color: rgb(41, 41, 36);
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 50px;
+        font-size: 30px;
+    }
+    #list {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    #icon2{
+         display: none;
+        padding-top: 30px;
+        font-size: 30px;
+        padding-left: 120px;
+    }
+
+    .section1 {
+        font-size: 100px;
+        height: 180vh;
+        width: 100%;
+       
+    }
+
+    .section {
+     
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .left h2{
+        font-size: 50px;
+        color: black;
+        margin-left: -20px;
+    }
+    .left {
+        margin-left: 40px;
+        width: 90%;
+        font-size: 35px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    .right img {
+        margin-left: 170px;
+        margin-top: 70px;
+        width: 430px;
+        height: 430px;
+    }
+    .left button{
+        margin-left: 30px;
+        padding: 20px 30px;
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    .section2 {
+      
+        width: 100%;
+        height: 175vh;
+    }
+    .k #ho {
+        width: 380px;
+        height: 400px;
+        margin-left: -80px;
+    }
+    .k{
+        margin-top: 60px;
+        margin-left: 10px;
+        padding-bottom: 500px;
+        font-size: 250px;
+    }
+    .right2{
+        margin-top: 40px;
+        width: 300px;
+        margin-left: 60px;
+    }
+    .right2 h2{
+        margin-left: -40px;
+        font-size: 30px;
+    }
+    .right2 p{
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    .right2 h1{
+        margin-left: -40px;
+        font-size: 30px;
+    }
+    .al{
+        flex-direction: column;
+        font-size: 20px;
+        margin-left: -10px;
+    }
+    .o h1{
+        margin-left: 10px;
+    }
+    .o p{
+        width: 100%;
+        margin-left: -40px;
+        margin-top: 8px;
+    }
+    .section3{
+       
+        height: 330vh;
+    }
+    .nav{
+        flex-direction: column;
+
+    }
+    .one img{
+        width: 100px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    .one #r{
+        width: 500px;
+        height: 400px;
+    }
+    .one #t{
+        width: 400px;
+        height: 390px;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .two{
+        width: 100%;
+        font-size: 80px;
+        margin-top: 100px;
+    }
+    .two h1{
+        width: 90%;
+        margin-left: 40px;
+        font-size: 45px;
+    }
+    .two i{
+        margin-left: 50px;
+    }
+    .go{
+         flex-direction: column; 
+
+    }
+    .always{
+        width: 100%;
+    }
+    .always h2{
+     margin-left: -90px;
+     font-size: 40px;
+    }
+    .always h1{
+        margin-left: -90px;
+        font-size: 30px;
+    }
+    .always p{
+        margin-left: -90px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .always button{
+        margin-left: 100px;
+        margin-top: 50px;
+        padding: 30px 60px;
+        font-size: 20px;
+    }
+    .lol img{
+        margin-right:0px;
+        margin-top: 100px;
+        margin-left: 140px;
+        width: 500px;
+        height: 500px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .v img{ 
+        width: 390px;
+        height: 250px;
+        margin-bottom: 0px;
+        margin-left: 170px;
+        margin-top: -190px;
+    }
+    .v{
+        margin-top: 240px;
+        margin-bottom: 30px;
+        padding-bottom: 40px;
+    }
+    .v h2{
+        font-size: 30px;
+        margin-left: 200px;
+        width: 100%;
+    }
+    .v p{
+        font-size: 20px;
+        width: 100%;
+        margin-left: 200px;
+    }
+    .section4{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+   
+   .fg{
+    flex-direction: column;
+   }
+    .fg img{
+        width: 500px;
+        height: 300px;
+        margin-left: 40px;
+    }
+    .fg h2{
+        margin-left: -20px;
+        font-size: 40px;
+    }
+    .ass #add{
+        margin-left: 20px;
+    }
+    .fg p{
+        margin-left: -20px;
+      font-size: 40px;
+    }
+    .fg hr{
+        margin-left: 30px;  
+    }
+    .ass hr{
+        font-size: 100px;
+         width: 190px;
+    }
+     .dj{
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .dj img{
+        width: 500px;
+        height: 300px;
+        margin-left: 40px;
+    }
+    .dj h2{
+        margin-left: -20px;
+        font-size: 40px;
+    }
+    .ass #add{
+        margin-left: -20px;
+        font-size: 30px;
+    }
+    .dj p{
+        margin-left: -20px;
+        font-size: 40px;
+    }
+    .ass hr{
+        margin-left: 49px;  
+        width: 190px;
+        border: 2px solid;
+    }
+    .ass hr{
+        font-size: 100px;
+    }
+    #see{
+        margin-left: 290px;
+        padding: 20px 40px;
+        font-size: 30px;
+    }
+    .section5{
+        flex-direction: column;
+        height: 190vh;
+    }
+    .qaz{
+        flex-direction: column;
+        
+    }
+    .ll h2{
+   font-size: 50px;
+   margin-top: -50px;
+    }
+    .ll h1{
+        width: 100%;
+        font-size: 30px;
+    }
+    .ll p{
+        width: 120%;
+        font-size: 35px;
+    }
+    .axad{
+        flex-direction: column;
+    }
+    .lli #ener{
+        width: 390px;
+        height: 400px;
+        margin-left: -220px;
+        margin-top: 130px;
+    }
+    .lli #theme{
+        width: 420px;
+        height: 400px;
+        margin-top: 1100px;
+        margin-right: -100px;
+    }
+    .nn{
+        font-size: 20px;
+    }
+    .section6{
+       
+        flex-wrap: wrap;
+    }
+    .section6 img{
+        width: 500px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    .our{
+        width: 330px;
+        height: 500px;
+        margin-left: 30px;
+    }
+    .our h1{
+        font-size: 25px;
+    }
+    .our p{
+        font-size: 15px;
+        color: black;
+    }
+    .ou{
+        width: 330px;
+        height: 500px;
+        margin-left: 40px;
+    }
+    .ou h1{
+        font-size: 25px;
+    }
+    .ou p{
+        font-size: 15px;
+        color: black;
+    }
+    .section7{
+       
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+    .natu {
+        width: 300px;
+        background-color: none;
+        margin-left: 50px;
+        height: 65vh;
+    }
+    .natu h1{
+        font-size: 20px;
+    }
+    .vege {
+        margin-left: 200px;
+    }
+    .natu img{
+        margin-left: 0px;
+        width: 300px;
+        padding-bottom: 0px;
+    }
+    .natu p{
+        width: 80%;
+        font-size: 20px;
+        color: black;
+        
+    }
+    #bty{
+        margin-left: 290px;
+        margin-top: -20px;
+        font-size: 40px;
+        color: black;
+        border: 0px solid;
+        padding: 20px 50px;
+    }
+    .footer{
+      
+        height: 130vh;
+      
+    }
+    .footer p{
+        font-size: 30px;
+    }
+    .foter{
+    
+        flex-wrap: wrap;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+} */
+
+
+@media(min-width: 820px) and (max-width:1180px){
+    .header ul {
+        display: none;
+
+    }
+    .som h1{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #icon2{
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .icon i {
+        display: none;
+    }
+
+    .bnm i {
+        display: block;
+        padding-top: 30px;
+        font-size: 40px;
+        padding-left: 390px;
+    }
+    #list{
+        background-color: rgb(41, 41, 36);
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 50px;
+        font-size: 30px;
+    }
+    #list {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    #icon2{
+         display: none;
+        padding-top: 30px;
+        font-size: 30px;
+        padding-left: 120px;
+    }
+
+    .section1 {
+        font-size: 100px;
+        height: 180vh;
+        width: 100%;
+       
+    }
+
+    .section {
+     
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .left h2{
+        font-size: 50px;
+        color: black;
+        margin-left: -20px;
+    }
+    .left {
+        margin-left: 40px;
+        width: 90%;
+        font-size: 35px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    .right img {
+        margin-left: 170px;
+        margin-top: 70px;
+        width: 430px;
+        height: 430px;
+    }
+    .left button{
+        margin-left: 30px;
+        padding: 20px 30px;
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    .section2 {
+      
+        width: 100%;
+        height: 185vh;
+    }
+    .k #ho {
+        width: 380px;
+        height: 400px;
+        margin-left: -80px;
+    }
+    .k{
+        margin-top: 60px;
+        margin-left: 10px;
+        padding-bottom: 500px;
+        font-size: 250px;
+    }
+    .right2{
+        margin-top: 40px;
+        width: 300px;
+        margin-left: 60px;
+    }
+    .right2 h2{
+        margin-left: -40px;
+        font-size: 30px;
+    }
+    .right2 p{
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    .right2 h1{
+        margin-left: -40px;
+        font-size: 30px;
+    }
+    .al{
+        flex-direction: column;
+        font-size: 20px;
+        margin-left: -10px;
+    }
+    .o h1{
+        margin-left: 10px;
+    }
+    .o p{
+        width: 100%;
+        margin-left: -40px;
+        margin-top: 8px;
+    }
+    .section3{
+       
+        height: 390vh;
+    }
+    .nav{
+        flex-direction: column;
+
+    }
+    .one img{
+        width: 100px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    .one #r{
+        width: 500px;
+        height: 400px;
+    }
+    .one #t{
+        width: 400px;
+        height: 390px;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .two{
+        width: 100%;
+        font-size: 80px;
+        margin-top: 100px;
+    }
+    .two h1{
+        width: 90%;
+        margin-left: 40px;
+        font-size: 45px;
+    }
+    .two i{
+        margin-left: 50px;
+    }
+    .go{
+         flex-direction: column; 
+
+    }
+    .always{
+        width: 100%;
+    }
+    .always h2{
+     margin-left: -90px;
+     font-size: 40px;
+    }
+    .always h1{
+        margin-left: -90px;
+        font-size: 30px;
+    }
+    .always p{
+        margin-left: -90px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .always button{
+        margin-left: 100px;
+        margin-top: 50px;
+        padding: 30px 60px;
+        font-size: 20px;
+    }
+    .lol img{
+        margin-right:0px;
+        margin-top: 100px;
+        margin-left: 140px;
+        width: 500px;
+        height: 500px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .v img{ 
+        width: 390px;
+        height: 250px;
+        margin-bottom: 0px;
+        margin-left: 170px;
+        margin-top: -190px;
+    }
+    .v{
+        margin-top: 240px;
+        margin-bottom: 30px;
+        padding-bottom: 40px;
+    }
+    .v h2{
+        font-size: 30px;
+        margin-left: 200px;
+        width: 100%;
+    }
+    .v p{
+        font-size: 20px;
+        width: 100%;
+        margin-left: 200px;
+    }
+    .section4{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+   
+   .fg{
+    flex-direction: column;
+   }
+    .fg img{
+        width: 500px;
+        height: 300px;
+        margin-left: 40px;
+    }
+    .fg h2{
+        margin-left: -20px;
+        font-size: 40px;
+    }
+    .ass #add{
+        margin-left: 20px;
+    }
+    .fg p{
+        margin-left: -20px;
+      font-size: 40px;
+    }
+    .fg hr{
+        margin-left: 30px;  
+    }
+    .ass hr{
+        font-size: 100px;
+         width: 190px;
+    }
+     .dj{
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .dj img{
+        width: 500px;
+        height: 300px;
+        margin-left: 40px;
+    }
+    .dj h2{
+        margin-left: -20px;
+        font-size: 40px;
+    }
+    .ass #add{
+        margin-left: -20px;
+        font-size: 30px;
+    }
+    .dj p{
+        margin-left: -20px;
+        font-size: 40px;
+    }
+    .ass hr{
+        margin-left: 49px;  
+        width: 190px;
+        border: 2px solid;
+    }
+    .ass hr{
+        font-size: 100px;
+    }
+    #see{
+        margin-left: 290px;
+        padding: 20px 40px;
+        font-size: 30px;
+    }
+    .section5{
+        flex-direction: column;
+        height: 220vh;
+    }
+    .qaz{
+        flex-direction: column;
+        
+    }
+    .ll h2{
+   font-size: 50px;
+   margin-top: -50px;
+    }
+    .ll h1{
+        width: 100%;
+        font-size: 30px;
+    }
+    .ll p{
+        width: 120%;
+        font-size: 35px;
+    }
+    .axad{
+        flex-direction: column;
+    }
+    .lli #ener{
+        width: 390px;
+        height: 400px;
+        margin-left: -220px;
+        margin-top: 130px;
+    }
+    .lli #theme{
+        width: 420px;
+        height: 400px;
+        margin-top: 1100px;
+        margin-right: -100px;
+    }
+    .nn{
+        font-size: 20px;
+    }
+    .section6{
+       
+        flex-wrap: wrap;
+    }
+    .section6 img{
+        width: 500px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    .our{
+        width: 330px;
+        height: 500px;
+        margin-left: 30px;
+    }
+    .our h1{
+        font-size: 25px;
+    }
+    .our p{
+        font-size: 15px;
+        color: black;
+    }
+    .ou{
+        width: 330px;
+        height: 500px;
+        margin-left: 40px;
+    }
+    .ou h1{
+        font-size: 25px;
+    }
+    .ou p{
+        font-size: 15px;
+        color: black;
+    }
+    .section7{
+       
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+    .natu {
+        width: 300px;
+        background-color: none;
+        margin-left: 50px;
+        height: 65vh;
+    }
+    .natu h1{
+        font-size: 20px;
+    }
+    .vege {
+        margin-left: 200px;
+    }
+    .natu img{
+        margin-left: 0px;
+        width: 300px;
+        padding-bottom: 0px;
+    }
+    .natu p{
+        width: 80%;
+        font-size: 20px;
+        color: black;
+        
+    }
+    #bty{
+        margin-left: 290px;
+        margin-top: -20px;
+        font-size: 40px;
+        color: black;
+        border: 0px solid;
+        padding: 20px 50px;
+    }
+    .footer{
+      
+        height: 130vh;
+      
+    }
+    .footer p{
+        font-size: 30px;
+    }
+    .foter{
+    
+        flex-wrap: wrap;
+        margin-left: 20px;
+        font-size: 35px;
     }
 }

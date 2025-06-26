@@ -201,7 +201,8 @@ a {
     background-color: rgb(215, 224, 224);
     margin-left: 20px;
     margin-bottom: 20px;
-    animation: anim 5s;
+    animation: anim 5s ease-in-out;
+     animation-timeline: view(80% auto);
     animation-timeline: scroll;
 
 }
@@ -421,7 +422,7 @@ a {
         width: 300px;
         height: 200px;
         margin-left: 40px;
-        position: relative;
+        margin-bottom: 20px;
     }
     .section2{
         flex-direction: column;
@@ -469,5 +470,140 @@ a {
         /* width: 50%; */
         margin-left: -20px;
         font-size: 15px;
+    }
+}
+
+
+
+
+
+@media(min-width: 820px) and (max-width:1180px) {
+    .header ul {
+        display: none;
+
+    }
+    #icon2{
+        display: none;
+    }
+
+     .som h1{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .icon i {
+        display: none;
+    }
+
+    .bnm i {
+        display: block;
+        padding-top: 30px;
+        font-size: 40px;
+        padding-left: 370px;
+    }
+    #list{
+        background-color: rgb(41, 41, 36);
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 50px;
+        font-size: 30px;
+    }
+    #list {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 30px  ;
+    }
+
+    #icon2{
+         display: none;
+        padding-top: 30px;
+        font-size: 20px;
+        padding-left: 120px;
+    }
+    .section1{
+        flex-direction: column;
+        height: 90vh;
+        margin-top: 10px;
+    }
+    .left{
+        margin-top: -20px;
+    }
+    .left h1{
+        margin-left: -155px;
+        margin-top: 0px;
+    }
+    .left p{
+        margin-left: -150px;
+        width: 130%;
+        font-size: 30px;
+    }
+    .right img{
+       padding-top: -100px;
+        width: 500px;
+        margin-bottom: 20px;
+        height: 500px;
+        margin-left: 190px;
+        
+    }
+    .section2{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .all img{
+        width: 300px;
+        
+    }
+    .all{
+        width:300px;
+    }
+    .section3{
+        flex-direction: column;
+    }
+    .lil{
+        width: 400px;
+        margin-left: 150px;
+    }
+    .left1 img{
+        width: 400px;
+    }
+    .right1{
+        margin-left: 25px;
+    }
+    .right1 input{
+        width: 85%;
+        height: 10vh;
+        font-size: 30px;
+    }
+    .right1 textarea{
+        width: 82%;
+        height: 20vh;
+        font-size: 30px;
+    }
+    .right1 h3{
+        padding-left: 15px;
+    }
+    .right1 hr{
+        margin-left: 15px;
+    }
+    .footer{
+        flex-direction: column;
+        height: 120vh;
+        /* width: 100%; */
+    }
+    .foter{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        font-size: 30px;
+        /* width: 50%; */
+        margin-left: -20px;  
+    }
+    .footer p{
+        font-size: 20px;
     }
 }

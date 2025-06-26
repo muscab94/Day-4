@@ -202,6 +202,7 @@ a {
 }
 .a{
     display: flex;
+     animation-timeline: view(80% auto);
     
 }
 .s h1{
@@ -228,7 +229,8 @@ a {
     gap: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
-    animation: boot 5s;
+    animation: boot 5s ease-in-out;
+     animation-timeline: view(80% auto);
 }
 @keyframes boot{
     0%{
@@ -248,7 +250,7 @@ a {
         transform: translate(300px);
     }
     100%{
-        transform: translate(0);
+        transform: translate(0px);
     }
 }
 .u{
@@ -492,5 +494,138 @@ a{
         /* width: 50%; */
         margin-left: -20px;
         font-size: 15px;
+    }
+}
+
+
+
+
+
+@media(min-width: 820px) and (max-width:1180px) {
+    .header ul {
+        display: none;
+
+    }
+    #icon2{
+        display: none;
+    }
+    .som h1{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .som img{
+        margin-top: 30px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .icon i {
+        display: none;
+    }
+
+    .bnm i {
+        display: block;
+        padding-top: 45px;
+        font-size: 30px;
+        padding-left: 320px;
+    }
+    #list{
+        background-color: rgb(41, 41, 36);
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 50px;
+        font-size: 30px;
+    }
+    #list {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    #icon2{
+         display: none;
+        padding-top: 30px;
+        font-size: 20px;
+        padding-left: 120px;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .left{
+        margin-left: 120px;
+        width: 100%;
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+    .m{
+        flex-direction: column;
+        margin-left: 180px;
+        margin-bottom: 30px;
+    }
+    .u{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .b{
+        /* flex-direction: column; */
+        margin-left: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-top: 80px;
+        padding-left: 40px;
+    }
+    .k{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .one{
+        margin-left: -100px;
+        width: 100%;
+        font-size: 10px;
+    }
+    .our{
+        width: 65%;
+    }
+    .our h1{
+        width:130px;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: -30px;
+        margin-bottom: 5px;
+    }
+    .our p{
+      font-size: 15px;
+      margin-top: 25px;
+      
+      margin-left: -30px;
+    }
+    .conta{
+        margin-left: 200px;
+        padding: 10px 40px;
+    }
+    .conta button{
+        padding: 10px 50px;
+        margin-left: 100px;
+        font-size: 20px;
+    }
+     .footer{
+        flex-direction: column;
+        height: 120vh;
+        /* width: 100%; */
+    }
+    .foter{
+        /* flex-direction: column; */
+        /* width: 50%; */
+        flex-wrap: wrap;
+        margin-left: -20px;
+        font-size: 30px;
+    }
+    .footer p{
+        font-size: 20px;
     }
 }
