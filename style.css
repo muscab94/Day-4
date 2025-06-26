@@ -867,7 +867,7 @@ button:hover {
 }
 
 /* section */
-@media(max-width: 390px) {
+@media(min-width: 390px) {
     .header ul {
         display: none;
 
@@ -878,6 +878,7 @@ button:hover {
 
     .header {
         width: 100%;
+        
     }
 
     .icon i {
@@ -914,13 +915,14 @@ button:hover {
         display: flex;
         height: 150vh;
         width: 100%;
+        
     }
 
     .section {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 10px;
+        padding-top: -380px;
     }
 
     .left {
