@@ -1072,6 +1072,7 @@ button:hover {
     }
     .fg h2{
         margin-left: -20px;
+        margin-top: 20px;
     }
     .ass #add{
         margin-left: 20px;
@@ -1096,6 +1097,7 @@ button:hover {
     }
     .dj h2{
         margin-left: -20px;
+        margin-top: 20px;
     }
     .ass #add{
         margin-left: -20px;
@@ -1110,6 +1112,9 @@ button:hover {
     }
     .ass hr{
         font-size: 100px;
+    }
+    #see{
+        margin-left: 140px;
     }
     .section5{
         flex-direction: column;
@@ -1202,7 +1207,7 @@ button:hover {
     }
     .footer{
         flex-direction: column;
-        height: 200vh;
+        height: 175vh;
         /* width: 100%; */
     }
     .foter{
