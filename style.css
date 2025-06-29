@@ -867,7 +867,7 @@ button:hover {
 }
 
 /* section */
-@media(min-width: 390px) {
+@media(max-width: 428px) {
     .header ul {
         display: none;
 
@@ -984,6 +984,7 @@ button:hover {
     .section3{
         flex-direction: column;
         height: 460vh;
+        width: 100%;
     }
     .nav{
         flex-direction: column;
@@ -1061,6 +1062,7 @@ button:hover {
     }
     .section4{
         flex-direction: column;
+        width: 100%;
     }
     .fg{
         flex-direction: column;
@@ -1119,6 +1121,7 @@ button:hover {
     .section5{
         flex-direction: column;
         height: 200vh;
+        width: 100%;
     }
     .qaz{
         flex-direction: column;
@@ -1155,6 +1158,7 @@ button:hover {
     }
     .section6{
         flex-direction: column;
+        width: 100%;
     }
     .section6 img{
         width: 300px;
@@ -1187,6 +1191,7 @@ button:hover {
     }
     .section7{
         flex-direction: column;
+        width: 100%;
     }
     .natu {
         width: 300px;
@@ -1207,8 +1212,8 @@ button:hover {
     }
     .footer{
         flex-direction: column;
-        height: 175vh;
-        /* width: 100%; */
+        height: 195vh;
+        width: 100%;
     }
     .foter{
         flex-direction: column;

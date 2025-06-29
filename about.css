@@ -538,7 +538,7 @@ a {
     padding-left: 10px;
 }
 
-@media(min-width: 390px) {
+@media(max-width: 428px) {
     .header ul {
         display: none;
 
